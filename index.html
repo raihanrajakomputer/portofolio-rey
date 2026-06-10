@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Rey</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rey Batukam</title>
 
-    <style>
-        body{
-            background:#0f172a;
-            color:white;
-            font-family:Arial, sans-serif;
-            text-align:center;
-            padding-top:80px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
 
-        img{
-            width:180px;
-            height:180px;
-            border-radius:50%;
-            border:4px solid #38bdf8;
-        }
+body{
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
 
-        h1{
-            color:#38bdf8;
-        }
+.container{
+    text-align:center;
+    padding:30px;
+}
 
-        .card{
-            max-width:700px;
-            margin:auto;
-            background:#1e293b;
-            padding:30px;
-            border-radius:20px;
-        }
+.sahur{
+    font-size:30px;
+    animation:gerak 2s infinite;
+}
 
-        a{
-            color:#38bdf8;
-            text-decoration:none;
-        }
-    </style>
+h1{
+    font-size:60px;
+    margin:20px 0;
+}
+
+p{
+    font-size:20px;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+@keyframes gerak{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}
+</style>
 </head>
 
 <body>
 
-<div class="card">
+<div class="container">
 
-<h1>👋 Halo, Saya ReyBatukam</h1>
+<div class="sahur">
+🪑 TUNG TUNG SAHUR 🪑
+</div>
 
-<img src="https://i.imgur.com/4M34hi2.png">
+<h1>REY BATUKAM</h1>
 
-<h2>Mahasiswa Ilmu Komputer</h2>
+<p>Mahasiswa Ilmu Komputer</p>
+<p>RAJA KODING DI INDONESIA</p>
 
-<p>
-Sedang belajar Python, pemrograman, dan hanya untuk bersenang senang saja.
-</p>
+<br>
 
-<p>
-🎮 Project pertama: Hello World😂
-</p>
-
-<p>
-📍 Saranjana, Indonesia
-</p>
-
-<p>
-🔥 "HANYA BERSENANG SENANG"
-</p>
+<a href="#" class="btn">Instagram</a>
+<a href="#" class="btn">TikTok</a>
+<a href="#" class="btn">GitHub</a>
 
 </div>
 
