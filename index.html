@@ -6,6 +6,7 @@
 <title>Rey Batukam</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -27,19 +28,34 @@ body{
     padding:30px;
 }
 
+.foto{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid white;
+    margin:20px 0;
+    animation:borderRGB 2s linear infinite;
+}
+
 .sahur{
-    font-size:30px;
-    animation:gerak 2s infinite;
+    font-size:35px;
+    font-weight:bold;
+    animation:
+        gerak 2s infinite,
+        rgb 3s linear infinite;
 }
 
 h1{
     font-size:60px;
     margin:20px 0;
+    animation:rgb 2s linear infinite;
 }
 
 p{
     font-size:20px;
     color:#cbd5e1;
+    margin:5px 0;
 }
 
 .btn{
@@ -55,13 +71,100 @@ p{
 
 .btn:hover{
     transform:scale(1.1);
+    box-shadow:0 0 25px cyan;
 }
 
 @keyframes gerak{
-    0%{transform:translateY(0);}
-    50%{transform:translateY(-10px);}
-    100%{transform:translateY(0);}
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
 }
+
+@keyframes rgb{
+    0%{
+        color:red;
+        text-shadow:
+            0 0 10px red,
+            0 0 20px red,
+            0 0 40px red;
+    }
+
+    20%{
+        color:orange;
+        text-shadow:
+            0 0 10px orange,
+            0 0 20px orange,
+            0 0 40px orange;
+    }
+
+    40%{
+        color:yellow;
+        text-shadow:
+            0 0 10px yellow,
+            0 0 20px yellow,
+            0 0 40px yellow;
+    }
+
+    60%{
+        color:lime;
+        text-shadow:
+            0 0 10px lime,
+            0 0 20px lime,
+            0 0 40px lime;
+    }
+
+    80%{
+        color:cyan;
+        text-shadow:
+            0 0 10px cyan,
+            0 0 20px cyan,
+            0 0 40px cyan;
+    }
+
+    100%{
+        color:magenta;
+        text-shadow:
+            0 0 10px magenta,
+            0 0 20px magenta,
+            0 0 40px magenta;
+    }
+}
+
+@keyframes borderRGB{
+    0%{
+        border-color:red;
+        box-shadow:0 0 25px red;
+    }
+
+    25%{
+        border-color:yellow;
+        box-shadow:0 0 25px yellow;
+    }
+
+    50%{
+        border-color:lime;
+        box-shadow:0 0 25px lime;
+    }
+
+    75%{
+        border-color:cyan;
+        box-shadow:0 0 25px cyan;
+    }
+
+    100%{
+        border-color:magenta;
+        box-shadow:0 0 25px magenta;
+    }
+}
+
 </style>
 </head>
 
@@ -70,8 +173,10 @@ p{
 <div class="container">
 
 <div class="sahur">
-🪑 TUNG TUNG SAHUR 🪑
+ TUNG TUNG SAHUR 
 </div>
+
+<img src="_DSC0466.JPG" class="foto">
 
 <h1>REY BATUKAM</h1>
 
@@ -81,7 +186,11 @@ p{
 <br>
 
 <a href="#" class="btn">Instagram</a>
-<a href="#" class="btn">TikTok</a>
+
+<a href="https://www.tiktok.com/@ryoiko_" class="btn" target="_blank">
+TikTok Saya
+</a>
+
 <a href="#" class="btn">GitHub</a>
 
 </div>
